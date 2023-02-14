@@ -1,4 +1,4 @@
-import TaskCard from "./components/TaskCard/taskCard";
+import TaskCard from "./components/TaskCard/TaskCard";
 
 const App = () => {
   return (
