@@ -1,4 +1,4 @@
-import TasksList from "./components/TaskCard/TasksList/TasksList";
+import TasksList from "./components/TasksList/TasksList";
 
 const App = () => {
   return (

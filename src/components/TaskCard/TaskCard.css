@@ -1,7 +1,14 @@
 .task-card {
   padding: 2rem;
+  display: inline-block;
+  background-color: rgb(185, 158, 211);
+  border: solid 3px rgb(227, 205, 252);
+  border-radius: 30px;
 }
 
+.task-card * {
+  display: inline-block;
+}
 .name--line-through {
   text-decoration: line-through;
 }

@@ -1,9 +1,10 @@
-import tasks from "../../../data/tasks";
-import TaskCard from "../TaskCard";
+import tasks from "../../data/tasks";
+import TaskCard from "../TaskCard/TaskCard";
+import "./TaskList.css";
 
 const TasksList = (): JSX.Element => {
   return (
-    <ul>
+    <ul className="task-list">
       {tasks.map((task) => (
         <li key={task.id}>
           <TaskCard task={task} />

@@ -10,7 +10,7 @@ const TaskCard = ({
 }: TaskCardProps): JSX.Element => {
   return (
     <article className="task-card">
-      <button>🟩</button>
+      <button className="task-card__toggle-button">✅</button>
       <h2 className={`task-card__name ${isDone ? "name--line-through" : ""}`}>
         {name}
       </h2>
