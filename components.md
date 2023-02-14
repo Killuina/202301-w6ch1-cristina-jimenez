@@ -2,37 +2,50 @@
 
 ## Data layer
 
-- Task :
+- List of tasks:
 - Id: number
 - name: string
 - isDone: boolean
 
 ## Data modifications
 
+- Load task
 - Delete a task
 - Add a task
-- Toggle task isDone value
+- Toggle task status
 
 ## Components
 
-## List
+## Tasks List
 
-- Shows a list of tasks
-- Receives tasks data from store
-- Sends task name and isDone status to task component
+- Receives a list of tasks
+- Shows a task card component for every task in the list
+- Sends a task to every task component
 
-- Dispatches the action of deleting task
+## Task Card
 
-## Task
+- Receives toggle status action
+- Receives delete task action
+- Receives task info
 
-- Receives task name
-- Shows task's name and isDone status
+- Shows task's name and done status
+- Shows button component to toggle
+- Shows button component to delete
+
+- Sends toggle status action to toggle button
+- Sends delete task action to toggle button
 
 ## Form
 
-- Receives task name
-- Sends a post request to the api (?)
+- Receives the add student action
+- Shows an input for the new task name with label "Task"
+- Shows a button "Add Task"
+- On submit executes the add student action
 
 ## Button
 
-- Dispatches the action of toggling isDone status
+- Receives an action
+- Receives an icon
+
+- Shows the received icon
+- On click executes the received action
