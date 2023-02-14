@@ -1,0 +1,7 @@
+.task-card {
+  padding: 2rem;
+}
+
+.name--line-through {
+  text-decoration: line-through;
+}

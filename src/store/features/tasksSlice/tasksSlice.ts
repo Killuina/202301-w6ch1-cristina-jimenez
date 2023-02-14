@@ -1,19 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { Tasks } from "../../../types";
 
-interface Task {
-  id: number;
-  name: string;
-  isDone: boolean;
-}
-
+const initialTasks: Tasks = [];
 const tasksSlice = createSlice({
   name: "tasks",
-  initialState: [
-    { id: 1, name: "Hacer la colada", isDone: false },
-    { id: 2, name: "Hacer la comida", isDone: false },
-  ],
+  initialState: initialTasks,
   reducers: {
-    loadTasks: (currentTasks, { payload }: PayloadAction<Task[]>) => [
+    loadTasks: (currentTasks, { payload }: PayloadAction<Tasks>) => [
       ...payload,
     ],
     deleteTask: (currentTasks, { payload }: PayloadAction<number>) =>
