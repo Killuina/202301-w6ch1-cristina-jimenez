@@ -1,4 +1,5 @@
 import TasksList from "./components/TasksList/TasksList";
+import tasks from "./data/tasks";
 
 const App = () => {
   return (
@@ -7,7 +8,7 @@ const App = () => {
         <h1>ToDo App 📝</h1>
       </header>
       <main>
-        <TasksList />
+        <TasksList tasks={tasks} />
       </main>
     </div>
   );

@@ -1,8 +1,12 @@
-import tasks from "../../data/tasks";
+import { Tasks } from "../../types";
 import TaskCard from "../TaskCard/TaskCard";
-import "./TaskList.css";
+import "./TasksList.css";
 
-const TasksList = (): JSX.Element => {
+interface TasksListProps {
+  tasks: Tasks;
+}
+
+const TasksList = ({ tasks }: TasksListProps): JSX.Element => {
   return (
     <ul className="task-list">
       {tasks.map((task) => (
