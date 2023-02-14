@@ -30,5 +30,6 @@ button {
 }
 
 .app {
+  padding: 2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
