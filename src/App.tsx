@@ -1,4 +1,4 @@
-import TaskCard from "./components/TaskCard/TaskCard";
+import TasksList from "./components/TaskCard/TasksList/TasksList";
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
         <h1>ToDo App 📝</h1>
       </header>
       <main>
-        <TaskCard task={{ id: 1, name: "Hacer la colada", isDone: false }} />
+        <TasksList />
       </main>
     </div>
   );
